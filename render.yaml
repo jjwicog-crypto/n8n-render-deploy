@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: 5678
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n.onrender.com
+      - key: WEBHOOK_URL
+        value: https://n8n.onrender.com
+      - key: GENERIC_TIMEZONE
+        value: Asia/Ho_Chi_Minh
